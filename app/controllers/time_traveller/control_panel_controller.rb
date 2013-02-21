@@ -4,7 +4,7 @@ class TimeTraveller::ControlPanelController < ApplicationController
   before_filter :load_times, :load_background_image_url
 
   def index
-    render 'index'
+    render 'index', layout: 'time_traveller/application'
   end
 
   def time_travel

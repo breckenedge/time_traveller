@@ -4,12 +4,13 @@
   <title>TimeTraveller</title>
   <%= stylesheet_link_tag    "time_traveller/application", :media => "all" %>
   <%= javascript_include_tag "time_traveller/application" %>
-  <%= csrf_meta_tags %>
-  
+  <%= csrf_meta_tags %>  
 </head>
 <body class="tt">
 
 <%= yield %>
+
+<%= yield :inline_script %>
 
 </body>
 </html>

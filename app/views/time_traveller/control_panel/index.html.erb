@@ -21,12 +21,15 @@
 	<% end %>
 <% end %>
 
-<script type="text/javascript">
-  $(function() {
-  	var backgroundImageUrl = '<%= @background_image_url %>';
+<%= content_for :inline_script do %>
+	<script type="text/javascript">
+  	$(function() {
+  		var backgroundImageUrl = '<%= @background_image_url %>';
 
-  	$('body')
-  	  .css('background-image', 'url(' + backgroundImageUrl + ')')
-  	  .css('background-size', '100%');
-  });
-</script>
+	  	$('body')
+  		  .css('background-image', 'url(' + backgroundImageUrl + ')')
+  		  .css('background-size', '100%')
+  		  .css('background-repeat', 'no-repeat');
+	  });
+	</script>
+<% end %>
