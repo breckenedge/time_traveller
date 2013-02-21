@@ -13,6 +13,14 @@ run
 
     bundle install
 
+mount the engine by adding this to `[main app]/config/routes.rb`
+
+    mount TimeTraveller::Engine, at: '/time_traveller'
+
+enable the time_traveller css by adding this to `[main app]/app/assets/stylesheets/application.css`
+
+    *= require time_traveller/application
+
 then go to 
 
     http://your-app:3000/time_traveller
