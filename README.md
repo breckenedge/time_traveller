@@ -9,6 +9,8 @@ It's a rails engine, so just include it in your project's `Gemfile`
 
     gem 'time_traveller', git: 'https://github.com/troygnichols/time_traveller.git'
 
+Then go to `http://your-app:3000/time_traveller`
+
 # Example
 
 Hopefully it's pretty obvious how to use it.
