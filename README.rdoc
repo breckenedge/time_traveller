@@ -16,5 +16,5 @@ Hopefully it's pretty obvious how to use it.
 ![Screencap][screencap]
 
 
-  [1]: https://github.com/bebanjo/delorean
-  [screencap]: https://raw.github.com/troygnichols/time_traveller/master/docs/time_traveller_screencap.jpg
+[1]: https://github.com/bebanjo/delorean
+[screencap]: https://raw.github.com/troygnichols/time_traveller/master/docs/time_traveller_screencap.jpg
