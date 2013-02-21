@@ -1,7 +1,7 @@
 # Time Traveller
 
 
-This is nothing but a rails user interface for the excellent [delorean][1] gem.  It helps you to test your rails to see what would happen on at different dates/times.  Delorean is great for automated testing, but sometimes I wanted to be able to fake running the app on different dates in development mode as well.
+This is nothing but a rails user interface for the excellent [delorean][1] gem.  It helps you to test your rails app to see what would happen on at different dates/times.  Delorean is great for automated testing, but sometimes I wanted to be able to fake running the app on different dates in development mode as well.
 
 # Installation
 
@@ -9,11 +9,17 @@ It's a rails engine, so just include it in your project's `Gemfile`
 
     gem 'time_traveller', git: 'https://github.com/troygnichols/time_traveller.git'
 
-Then go to `http://your-app:3000/time_traveller`
+run
+
+    bundle install
+
+then go to 
+
+    http://your-app:3000/time_traveller
 
 # Example
 
-Hopefully it's pretty obvious how to use it.
+You should see this.  Hopefully it's pretty obvious how to use it.
 
 ![Screencap][screencap]
 
