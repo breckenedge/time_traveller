@@ -3,6 +3,7 @@
 	font-size: 42px;
 	color: #01DF01;
 	display: inline;
+	line-height: normal;
 }
 
 .tt-present {
@@ -23,6 +24,23 @@
 
 .tt-row input[type=text] {
   width: 200px;
+}
+
+.tt-row select {
+	height: 25px;
+	margin-top: 7px;
+}
+
+#time_travel_to_year {
+  width: 60px;  
+}
+
+#time_travel_to_month {
+	width: 90px;
+}
+
+time_travel_to_day {
+	width: 45px;
 }
 
 .tt-row input[type=submit] {
