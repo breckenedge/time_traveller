@@ -7,17 +7,16 @@ require "time_traveller/version"
 Gem::Specification.new do |s|
   s.name        = "time_traveller"
   s.version     = TimeTraveller::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of TimeTraveller."
-  s.description = "TODO: Description of TimeTraveller."
+  s.authors     = ["Troy Nichols"]
+  s.email       = ["troygnichols [at] gmail.com"]
+  s.homepage    = "https://github.com/troygnichols/time_traveller"
+  s.summary     = "User Interface for testing your rails app at different dates/times"
+  s.description = "Uses the delorean gem to fake the current server date/time"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.12"
-  # s.add_dependency "jquery-rails"
-
-  s.add_development_dependency "sqlite3"
+  s.add_dependency "jquery-rails"
+  s.add_dependency "delorean"
 end
