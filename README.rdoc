@@ -13,8 +13,8 @@ It's a rails engine, so just include it in your project's `Gemfile`
 
 Hopefully it's pretty obvious how to use it.
 
-![Screencap][2]
+![Screencap][screencap]
 
 
   [1]: https://github.com/bebanjo/delorean
-  [2]: https://raw.github.com/troygnichols/time_traveller/master/docs/time_traveller_screencap.jpg
+  [screencap]: https://raw.github.com/troygnichols/time_traveller/master/docs/time_traveller_screencap.jpg
