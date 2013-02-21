@@ -36,6 +36,6 @@ class TimeTraveller::ControlPanelController < ApplicationController
       else 
         img = "time_traveller/delorean-future-#{rand(1)+1}.jpg"
       end
-      @background_image_url = ActionController::Base.helpers.asset_path(img)
+      @background_image_url = view_context.asset_path(img)
     end
 end
