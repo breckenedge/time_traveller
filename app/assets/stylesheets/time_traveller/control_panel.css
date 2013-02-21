@@ -1,0 +1,30 @@
+.tt-time {
+	font-family: 'ds-digital-normal';
+	font-size: 42px;
+	color: #01DF01;
+	display: inline;
+}
+
+.tt-present {
+	color: orange;
+}
+
+.tt-row {	
+	height: 65px;
+	padding: 10px;
+	margin: 5px;
+}
+
+.tt-label {
+  font-family: 'impact_label-regular';	
+	font-size: 20px;
+	display:block;
+}
+
+.tt-row input[type=text] {
+  width: 200px;
+}
+
+.tt-row input[type=submit] {
+	float: right;
+}

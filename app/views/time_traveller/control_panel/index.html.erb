@@ -1,0 +1,32 @@
+<%= content_tag :div, class: 'tt-container' do %>
+	<%= content_tag :div, class: 'tt-row metal' do %>
+		<%= form_tag action: :back_to_the_present do %>			
+			<%= submit_tag 'Back to the Present', class: 'metal linear' %>
+			<label class="tt-label">Real Present Time:</label>			
+			<%= content_tag :span, @real_present_time.strftime("%b %d, %Y"), class: 'tt-time tt-present' %>
+		<% end %>
+	<% end %>
+
+	<%= content_tag :div, class: 'tt-row metal' do %>
+	  <label class="tt-label">System Present Time:</label>
+	  <%= content_tag :span, Time.now.strftime('%b %d, %Y'), class: 'tt-time' %>
+	<% end %>
+
+	<%= content_tag :div, class: 'tt-row metal' do %>
+		<%= form_tag action: :time_travel do %>
+		 	<label class="tt-label">Destination Time:</label>
+			<%= select_date Date.today, prefix: 'time_travel_to' %>			
+			<%= submit_tag 'Time Travel', class: 'metal linear' %>
+		<% end %>
+	<% end %>
+<% end %>
+
+<script type="text/javascript">
+  $(function() {
+  	var backgroundImageUrl = '<%= @background_image_url %>';
+
+  	$('body')
+  	  .css('background-image', 'url(' + backgroundImageUrl + ')')
+  	  .css('background-size', '100%');
+  });
+</script>

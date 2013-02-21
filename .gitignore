@@ -1,0 +1,41 @@
+.bundle/
+log/*.log
+pkg/
+test/dummy/db/*.sqlite3
+test/dummy/log/*.log
+test/dummy/tmp/
+test/dummy/.sass-cache
+
+# Ignore temp files created by OSX
+.DS_Store
+
+# Ignore bundler config
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.db
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+# Ignore emacs temp files
+*~
+
+# Ignore vi/vim temp files
+.#*
+
+# Ignore automated test results files
+test/reports
+
+# ignore test coverage reports
+coverage
+
+# Ignore IDE metadata
+.idea
+
+# Ignore uploads directories
+public/system/uploads
+
+# Ignore compiled assets
+public/assets

@@ -1,0 +1,114 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+@font-face {
+    font-family: 'ds-digital-normal';
+    src: url('<%= asset_path('time_traveller/ds_digital/ds-digi-webfont.eot') %>');
+    src: url('<%= asset_path('time_traveller/ds_digital/ds-digi-webfont.eot?#iefix') %>') format('embedded-opentype'),
+         url('<%= asset_path('time_traveller/ds_digital/ds-digi-webfont.woff') %>') format('woff'),
+         url('<%= asset_path('time_traveller/ds_digital/ds-digi-webfont.ttf') %>') format('truetype'),
+         url('<%= asset_path('time_traveller/ds_digital/ds-digi-webfont.svg#ds-digital-normal') %>') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'impact_label-regular';
+    src: url('<%= asset_path('time_traveller/impact_label/impact_label-webfont.eot') %>');
+    src: url('<%= asset_path('time_traveller/impact_label/impact_label-webfont.eot?#iefix') %>') format('embedded-opentype'),
+         url('<%= asset_path('time_traveller/impact_label/impact_label-webfont.woff') %>') format('woff'),
+         url('<%= asset_path('time_traveller/impact_label/impact_label-webfont.ttf') %>') format('truetype'),
+         url('<%= asset_path('time_traveller/impact_label/impact_label-webfont.svg#impact_label-regular') %>') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.tt-container {
+	width: 550px;
+	padding: 10px;
+	margin: 5px;
+	margin-left: auto;
+	margin-right: auto;	
+	opacity: 0.9;
+}
+
+.tt-container input[type=submit] {
+	cursor: pointer;
+}
+
+.metal {
+	color: hsla(0,0%,20%,1);
+	text-shadow: hsla(0,0%,40%,.5) 0 -1px 0, hsla(0,0%,100%,.6) 0 2px 1px;	
+	
+	background-color: hsl(0,0%,90%);
+	-webkit-box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, 	/* border */
+						inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, 	/* soft SD */
+						inset hsla(0,0%,0%, .25) 0 -1px 0px 7px,	/* bottom SD */
+						inset hsla(0,0%,100%,.7) 0  2px 1px 7px, 	/* top HL */
+						
+							  hsla(0,0%, 0%,.15) 0 -5px 6px 4px, 	/* outer SD */
+							  hsla(0,0%,100%,.5) 0  5px 6px 4px;	/* outer HL */	
+	
+	-webkit-transition: color .2s;
+}
+
+.metal.radial:before, .metal.radial:after {
+	content: "";
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+	
+	/* fake conical gradients */
+	background-image: 	-webkit-radial-gradient(  50%   0%, 10% 50%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+						-webkit-radial-gradient(  50% 100%, 10% 50%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+						-webkit-radial-gradient(   0%  50%, 50% 10%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+						-webkit-radial-gradient( 100%  50%, 50% 06%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%);
+}
+.metal.radial:before { 	-webkit-transform: rotate( 65deg); }
+.metal.radial:after {	-webkit-transform: rotate(-65deg); }
+
+.metal.linear {
+	width: 200px;
+	font-size: 1em;
+	height: 40px;
+	border-radius: .5em;
+	background-image: 	-webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),					
+						-webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),					
+						-webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
+						
+						-webkit-linear-gradient(-90deg, hsl(0,0%,78%)  0%, 
+														hsl(0,0%,90%) 47%, 
+														hsl(0,0%,78%) 53%,
+														hsl(0,0%,70%)100%);						
+}
+
+.metal:active {
+	color: hsl(210, 100%, 40%);
+	text-shadow: hsla(210,100%,20%,.3) 0 -1px 0, hsl(210,100%,85%) 0 2px 1px, hsla(200,100%,80%,1) 0 0 5px, hsla(210,100%,50%,.6) 0 0 20px;
+	-webkit-box-shadow: 
+					inset hsla(210,100%,30%,  1) 0  0px 0px 4px, 	/* border */
+					inset hsla(210,100%,15%, .4) 0 -1px 5px 4px, 	/* soft SD */
+					inset hsla(210,100%,20%,.25) 0 -1px 0px 7px,	/* bottom SD */
+					inset hsla(210,100%,100%,.7) 0  2px 1px 7px, 	/* top HL */
+							
+						  hsla(210,100%,75%, .8) 0  0px 3px 2px, 	/* outer SD */			
+						  hsla(210,50%,40%, .25) 0 -5px 6px 4px, 	/* outer SD */
+						  hsla(210,80%,95%,   1) 0  5px 6px 4px;	/* outer HL */
+}
+
